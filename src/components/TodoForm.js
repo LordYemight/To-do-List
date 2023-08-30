@@ -8,8 +8,9 @@ const TodoForm = ({addTodo}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addTodo(value)
     setValue('')
+    value === '' ? alert('Enter Todo') : addTodo(value)
+    
   }
 
   return (
