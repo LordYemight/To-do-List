@@ -1,0 +1,34 @@
+.todoContainer{
+  width: 25rem;
+  height: auto;
+  max-height: 50rem;
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+  background-color: rgb(103, 182, 127);
+}
+
+.todoList{
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 2rem;
+  margin-bottom: 0rem;
+}
+
+@media screen and (max-width: 420px) {
+  .todoContainer{
+    height: auto;
+    max-height: 50rem;
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+    background-color: rgb(103, 182, 127);
+  }
+  
+  .todoList{
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 0rem;
+  }
+}
