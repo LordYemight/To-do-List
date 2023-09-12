@@ -1,0 +1,71 @@
+.todoContainer{
+  width: 25rem;
+  height: auto;
+  max-height: 50rem;
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+  background-color: rgb(103, 182, 127);
+}
+
+.todoList{
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 2rem;
+  margin-bottom: 0rem;
+}
+
+.toggle-buttons{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  height: 1.5rem;
+}
+
+.active{
+  background-color:  lightgreen; 
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.7rem;
+  border-radius: 5px;
+}
+
+.showCompleted{
+  background-color:  lightgreen;
+  color: black; 
+  border: none;
+  cursor: pointer;
+  margin-left: 0.7rem;
+  border-radius: 5px;
+}
+
+.off{
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.off:hover {
+  background-color: forestgreen;
+}
+
+@media screen and (max-width: 420px) {
+  .todoContainer{
+    height: auto;
+    max-height: 50rem;
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+    background-color: rgb(103, 182, 127);
+  }
+  
+  .todoList{
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 0rem;
+  }
+}
