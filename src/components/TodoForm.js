@@ -2,24 +2,24 @@ import React, { useState } from 'react'
 import '../styles/TodoForm.css'
 
 
-const TodoForm = ({addTodo}) => {
-  
+const TodoForm = ({ addTodo }) => {
+
   const [value, setValue] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setValue('')
     value === '' ? alert('Enter Todo') : addTodo(value)
-    
+
   }
 
   return (
     <form className="todoForm" onSubmit={handleSubmit}>
-      <input 
+      <input
         onChange={(e) => setValue(e.target.value)}
-        type="text" 
+        type="text"
         value={value}
-        placeholder='Add your to do' 
+        placeholder='Add your to do'
         className='addTodo'
       />
       <button type='submit' className='todo-btn'>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../styles/EditTodoForm.css'
 
-const EditTodoForm = ({editTodo, todo}) => {
+const EditTodoForm = ({ editTodo, todo }) => {
 
   const [value, setValue] = useState(todo.task);
 
@@ -13,11 +13,11 @@ const EditTodoForm = ({editTodo, todo}) => {
 
   return (
     <form className="todoEditForm" onSubmit={handleSubmit}>
-      <input 
+      <input
         onChange={(e) => setValue(e.target.value)}
-        type="text" 
+        type="text"
         value={value}
-        placeholder='Update task' 
+        placeholder='Update task'
         className='addTodo'
       />
       <button type='submit' className='todo-btn'>
